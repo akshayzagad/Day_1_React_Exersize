@@ -84,9 +84,10 @@ function Skills({skillObj}){
   return <div className='skills' style={{ backgroundColor: skillObj.color }}  >
    <span>{skillObj.skill}</span>
    <span>
-    {skillObj.level === "beginner" && "👶"}
+    {/* {skillObj.level === "beginner" && "👶"}
         {skillObj.level === "intermediate" && "👍"}
-        {skillObj.level === "advanced" && "💪"}
+        {skillObj.level === "advanced" && "💪"} */}
+        {skillObj.level === "beginner" ? "👶" : skillObj.level === "intermediate" ? "👍" : skillObj.level === "advanced" ? "💪" : ""}
     </span>  
   </div>
 }
